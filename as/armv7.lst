@@ -1,0 +1,35 @@
+ARM GAS  armv7.s 			page 1
+
+
+   1              	
+   2              	
+   3              	.text 
+   4              	
+   5              	.global _start
+   6              	        _start:   
+   7 0000 0470A0E3 	              mov %r7, $0x04
+   8 0004 0100A0E3 	              mov %r0, $0x01
+   9 0008 10109FE5 	              ldr %r1, = msg
+  10 000c 1120A0E3 	              mov %r2, $0x11
+  11 0010 000000EF 	              swi $0x00
+  12              	
+  13 0014 0170A0E3 	              mov %r7, $0x01
+  14 0018 6500A0E3 	              mov %r0, $0x65
+  15 001c 000000EF 	              swi $0x00
+  16              	.data
+  17              	     msg:
+  18 0000 0A0A0A0A 	       .ascii "\n\n\n\n Hello, wordl \n\n\n"    
+  18      2048656C 
+  18      6C6F2C20 
+  18      776F7264 
+  18      6C200A0A 
+ARM GAS  armv7.s 			page 2
+
+
+DEFINED SYMBOLS
+             armv7.s:6      .text:00000000 _start
+             armv7.s:7      .text:00000000 $a
+             armv7.s:17     .data:00000000 msg
+             armv7.s:18     .text:00000020 $d
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,877 @@
+
+vim log para tratamento
+vim -V9myVim.log
+
+gerar arquivo ctag no dir atual, no Vim 
+
+!ctags -R . 
+atualz dir :e .
+procurar refer classe, funcio etc em modo 
+de insensao Crtrl ]
+
+Gerar chave ssh
+
+Abra o Terminal .
+
+Cole o texto abaixo,  coloque o mesmo endereço de e-mail sem aspas usado na sua conta GitHub.
+
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+Observação: se você estiver usando um sistema legado que não oferece suporte ao algoritmo Ed25519, use:
+
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+
+Para concluir o processo basta autenticar a chave no site do git.  
+
+
+ssh -T git@github.com
+Confirme com 'yes' a solicitação de acesso e posse da chave.
+
+#comando de processos intermediário  referente a portas, conexões internet e portas seriais tbm proxy
+
+ps -ef ou ps aux  outro netstat -atunp ou netstat
+
+df -h ou df  outro top  du -sh * ou du outro history, type ou  tail outro find -type f
+-perm outro tar outro diff 
+
+COMANDOS DE TRATAMENTO USO EM CONJUNTO COM GREP AWK, EXPRESSAO REGULAR.
+
+NR - nº lin colunas, "emula o wc -l -w"
+FS - filtr caract n convenc # etc, emula grep, express regulr 
+NFS - add caract convenc \t , >, emula sed 
+
+
+sed ou sort tbm o uniq e expand 
+
+
+ -Teste Regex 
+
+701.317.984.23     \n 702 039 223 23
+701 i983 672 34    \n 939.930.333.42
+180 303 089 90     \n 939 740 302 93
+043,990,749,80     \n 802.340.635.73
+12,20.30,33        \n 32 838 839 302  
+23 738 082 029     \n 039.02.039.039
+170.0.0.1          \n 9 0393 2 0303 
+7 8873 89 99 32    \n 23.24.53.43536
+3.4343.03.32       \n 332 34 546 276       
+833.345.434.35     \n 954 5404 04 40
+
+
+'abcdefghijlmnopq'     df;ft;je;we;po;mh
+'bcdefghillmnopqw '    po; ke; je; pf; ns; kd;
+'cdefghijlmnopqwz'     ie; js; ks; pa; md; ux;
+'defghijlmnopqrs'      pe;nd;pc;he;gt;pe;
+'efghijlmnopqrstz'     va;id;da;ce;rt;oo;
+"FGHIJLMNOPQRSTU"      ma; sc; ar; aa; ok; vw;
+"GHIJLMNOPQRS"
+
+ -Listar nome de pessoas:Teste Regex
+
+José Antônio da Silva   Zé Abaltido da Silva
+Julia Nobrega de Ortega  Alana Quero Quero
+Gustavo Arenbetes Arruara  Leliane Araujo
+Vicente de Okiveira   Breno dos Santos
+Viviane Paiva Silva  Kayke de Paiva
+Juliana Paes de Caquico   Leo das Fontes
+Chica da Silva            Sparta Solador
+
+
+carlslps6@gmail.com  \n poptte349@gmail.com
+maria739@gmail.com   \n suleve94@gmail.com
+lica393@gmail.com    \n offset@gmail.com
+pleveu0@gmail.com    \n cmrr@gmail.com
+prozord@gmail.com    \n slewrate@gmail.com
+jss@gmail.com        \n threshold@gmail.com
+snapdragon@gmail.com \n trigger@gmail.com
+galaxys20fe@gmail.com \n flipfloprc@gmail.com
+lm358@gmail.com       \n ampop@gmail.con
+ne555@gmail.com       \n vpf2/3ninverter@gmail
+
+- Teste Lista regex, expressao regular padrao
+  nao coringa
+
+Aviario AAviao AAAves aventuras aalegre
+Baleario BBatata BBBaliza bagunça bbaile
+Casebre CCasal CCCabrito  castanha ccaverna
+Dale DDamasco DDDavi dario ddante ddddalila
+Eufo EEuforico EEEudes eules eetnia eeerpes
+Fone FFloresta FFFiasco fome ffunebre fffoda
+Gota GGugu GGGata gomes ggov gggostar gggget
+Hot HHyper HHHub HHHHome hipotese hhistoria
+Idiota IIlario IIIntimoa industria iindice
+Joia JJoana JJJota jean jjorge jjjuristas
+Kiko KKripto KKKayke kraque kkakaroto kkbyte
+Lote LLove LLLlexys lua lleonildes llléo
+Mel MMentira MMMMes menbro mmonsto mmmales
+Nove NNovato NNNeturno noob nnoite nnnave
+Ovo OOsso OOOitenta ostentar ooniciente 
+Pop PPoste PPPuro pureza pproposta pppeste
+Rota RRover RRRootear root rroteiro rrrombo
+Sobra SSuave SSSombra sexy ssuruba sssemear
+Thor TTenis TTTotó toalha ttombo tttocantis
+Uva UUrubu UUUrna uruarana uruguai umbilical
+Voz VVoraz VVVela volume vverniz vvvolaz 
+Xuxa XXbyte XXXlive xbots xxsite xxxlinux
+Yahoo YYes YYYstand yfalton yycrog yyylet
+Zebra ZZezum ZZZoro zuretsu zzona zzzenis
+
+
+extração m3u8, m3u usando o recurso regex no youtube-dl
+
+
+Git hub configure parte 2
+
+git  config   --global   user.name   "seu nome papapa"
+git  config   --global   user.email  " seu email coelhp"
+
+
+Characteristic  LM358BA
+
+Supply voltage  ≈ 3 - 36v
+POWER SUPPLY ≈ 800μA
+Input Offset voltage ≈ 0.3 - 2,5mv
+Input Offset Current ≈ 0.5 - 5nA
+Large Signal Open Loop Voltage Gain ≈ 100 v/mv
+CMRR:Common-mode rejection ratio ≈ 26 - 316μv/v 
+Slew rate ≈ 0.5v/μs
+Output current ≈ 60 - 100μA
+
+Cálculo de ganho completo:
+Vo = (vp - vn) * Avd (vp + vn)/2 * Avmc
+
+CMRR ≈ Avd / Avmc
+
+
+
+
+  Characteristic NE555
+                             Modes of operation
+                             bistable (on/off)
+                             Monostable (timer)
+                             astable (oscillator)
+
+Pin 1 - GND
+Pin 2 - TRIGGER: Vn: 1/3 vcc fixed in non-inverting: enable output digitali: set internal input 'SET' flipflop-rc to 1 
+Pin 3 - Digital output 
+Pin 4 - Clean/reset: Internal flipflop-rc output arrow to 0
+Pin 5 - Voltage control: Direct access to internal Ampop inverter port. It is possible to inject vcc and influence the value of the internal voltage dividers.
+Pin 6 - THRESHOLD: Vp: 2/3 vcc fixed on the inverter:disable output digital: arrow input Flipflop-rc internal 'RESET' to 1 
+Pin 7 - Discharge There are two internal transistors connected to the output of the internal rc-flipflop. At high level 1 at the input of the internal pnp the output will be low 0. At the same time, the npn receives 1 at the base, saturating allowing the capacitor to be discharged. This sets the digital output pin 3 off because it is the non-polarized inverter pnp transistor. In the next cycle started by the capacitor discharge, the pnp receives 0 and npn 1. The pnp polarizes the pin 3 digital output to high level. At the same time, npn receives 0 at the base and does not polarize, blocking any discharge. The combination of the flipflop's previous state plus the current high or low cycle output determines the digital output on or off. Previous state flipflop 1. npn output 1 saturated, pnp output 0, pin 3 output 0. In previous state 0. Pnp output 1, npn output 0 and pin 3 output on
+Pin 8 - VCC 
+
+
+ -comando iniciar projeto platformio
+ platformio init ide ambiente --board <id placa>
+
+ Ex.:
+ pio init -b uno
+
+
+'HIERARQUIA_DO_SIATEMA_REGEX
+noventa.log
+,quarebta
+.log,30000
+.log,baba.log
+hatata.txt,gatata.txt,bailala.txt
+serviu.doc
+-,ganso.doc
+,meretriz.doc
+'deu bom'
+,'deu ruim',
+'alias_como_ta'
+codigo+rurmir'
+----
+   A maioria das ferramentas GNU que usam expressões regulares (regex) suportam essas classes.
+
+ [[:alnum:]]  - [A-Za-z0-9]     
+ Alphanumeric characters
+ 
+ [[:alpha:]]  - [A-Za-z]       
+ Alphabetic characters
+ 
+ [[:blank:]]  - [ \x09]        
+ Space or tab characters only
+ 
+ [[:cntrl:]]  - [\x00-\x19\x7F]
+ Control characters
+ 
+ [[:digit:]]  - [0-9]          
+ Numeric characters
+ 
+ [[:graph:]]  - [!-~]          
+ Printable and visible characters
+ 
+ [[:lower:]]  - [a-z]          
+ Lower-case alphabetic characters
+ 
+ [[:print:]]  - [ -~]          
+ Printable (non-Control) characters
+ 
+ [[:punct:]]  - [!-/:-@[-`{-~]  
+ Punctuation characters
+ 
+ [[:space:]]  - [ \t\v\f]       
+ All whitespace chars
+ 
+ [[:upper:]]  - [A-Z]          
+ Upper-case alphabetic characters
+ 
+ [[:xdigit:]] - [0-9a-fA-F
+
+ [ X] characters tabulation 
+
+ '\s ' characters space
+
+ \s Qualquer caractere de espaço em branco
+ \v Espaço em branco vertical
+ \h Espaço em branco horizontal
+ x Ignorar espaço em branco
+
+
+blink :: \n Blink :: \n sdcard :: \n SDCARD
+
+
+.txt , .fie , .js , ,xml , .tar , .btar 
+
+        Pratica do AWK  
+
+1ºCAM; 2ºCAM; 3ºCAM; 4ºCAM; 5ºCAM; 6ºCAM;7ºCAM
+1ºC; 2ºC; 3ºC; 4ºC;5ºC; 6ºC; 7ºC; 8ºC;9ºC;10ºC;
+1ºCAMMMMMMMMMMPOOOOOO/ 2ºCAMMMMMMMMMMMMMMMMMPO
+1ºCAMMMMMMPO. 2ºCAMMMMMMMMPO. 3ºCAMMMMMMMMMPO.
+1ºCAMMMPO, 2ºCAMMMMMPO, 3ºCAMMMMMMPO,4ºCAMMMPO,
+
+
+
+mencoder Tut.mkv -sub Tut.vtt -subpos 95 -oac lavc -ovc lavc subcp htf-8 -o Tut.mkv                               
+
+
+libqrencoder  Tut.mkv -sub Tut.vtt -subpos 95 -oac lavc -ovc lavc subcp htf-8 -o Tut.mkv
+
+     Conversao se legenda
+ffmpeg -i Tut.vtt  Tut.srt
+
+
+    Embutir legenda em vídeo
+ffmpeg -i Tut.mp4  -vf subtitles=Tut.srt   TutContainer.mp4
+
+
+
+
+Os executáveis vão para a pasta "/usr/bin", as bibliotecas para a "/usr/lib", os arquivos de configuração para o "/etc" e assim por diante.
+
+
+Existem basicamente três formatos de pacotes diferentes: os pacotes .deb, usados pelas distribuições derivadas do Debian (incluindo o Kurumin, Ubuntu e Kubuntu), os pacotes .rpm, usados pelas distribuições derivadas do Red Hat (Fedora, Mandriva e outros) e os pacotes .tgz, usados pelo Slackware e derivados. Não existe nada de fundamentalmente diferente entre os três formatos e é inclusive possível transformar um pacote .rpm em um pacote .deb. Entretanto, devido às diferenças que existem entre uma distribuição e outra, não existe garantia de que um pacote do Fedora funcionará no Debian, por exemplo.
+
+
+
+
+
+Blog do Edivaldo – Informações e Notícias sobre Linux
+Menu
+Início » Como remover ou excluir links simbólicos no Linux
+
+Como remover ou excluir links simbólicos no Linux
+30 de outubro de 2022 Por Edivaldo Brito
+Facebook
+Tweet
+Pin
+LinkedIn
+Se você precisa retirar algum link simbólico do seu sistema, conheça e veja como remover ou excluir links simbólicos no Linux.
+
+No Linux, a vinculação é um conceito poderoso. Um link simbólico é um arquivo que se refere a um arquivo ou diretório diferente.
+
+Advertisement
+
+O link em si não contém nenhum dado do arquivo original. Ele simplesmente aponta para a localização do arquivo original, seja no mesmo sistema de arquivos, em sistemas de arquivos diferentes ou em um sistema de arquivos remoto.
+
+E neste guia, verifique a remoção ou exclusão de link simbólico no Linux.
+
+Como remover ou excluir links simbólicos no Linux
+
+Um link simbólico é um arquivo de ponteiro. Quando acessado, ele redireciona para o local do arquivo ou diretório original. Portanto, as regras de permissão de arquivo se aplicam de forma semelhante.
+Para realizar qualquer operação no link simbólico, a conta do usuário deve ter permissão de gravação no diretório pai. Caso contrário, tentar remover o link simbólico resultará em erro.
+
+Se um link simbólico estiver em uso, removê-lo pode causar problemas indesejados. Portanto, antes de remover um link simbólico, certifique-se de que ele não afeta o fluxo de trabalho de nenhum outro programa.
+
+Detectando link simbólico
+
+Quando um link simbólico é removido, o arquivo original não é afetado. Se seu objetivo é remover o link simbólico, é sempre uma boa ideia verificar se o destino é realmente um link simbólico.
+
+Podemos determinar um link simbólico a partir de suas informações de arquivo.
+ls -l /usr/bin/java
+
+Dê uma olhada na permissão do arquivo. O primeiro caractere é “l”, indicando que é um link simbólico. Posteriormente na saída, também indica a localização original do arquivo.
+Como remover ou excluir links simbólicos no Linux
+Removendo um link simbólico
+
+Um link simbólico em si é um arquivo. Podemos remover o link simplesmente excluindo o arquivo do link simbólico. Como alternativa, existem ferramentas dedicadas para detectar e remover links simbólicos.
+
+Para demonstração, fiz um link simbólico fictício.
+ls -l dummy_symlink.text
+
+Removendo um link simbólico usando rm
+
+O comando rm é a ferramenta dedicada para excluir arquivos e diretórios do sistema. Como o link simbólico em si é um arquivo, podemos usar o comando rm para removê-lo.
+
+O seguinte comando rm removerá o link simbólico.
+rm -v
+
+Para remover vários links simbólicos, use rm como faria para remover vários arquivos. Use a seguinte estrutura de comando.
+rm -v
+
+No modo interativo, o rm perguntará antes de remover cada arquivo e diretório. Para executar o rm no modo interativo, use o sinalizador “-i”.
+rm -i
+
+Se o link simbólico de destino for de um diretório, evite “/” no final do nome do diretório.
+rm -v
+
+Se você incluir “/”, rm assumirá que é um diretório. Se rm for executado para excluir um diretório, ele também excluirá o conteúdo do diretório original. Ao excluir o link simbólico, provavelmente esse não é o resultado esperado.
+
+Removendo um Symlink usando Desvincular
+
+Em vez de usar rm, o unlink também é uma ferramenta eficaz para remover links simbólicos. É uma ferramenta dedicada para remover links (links simbólicos e físicos). Ao contrário do rm, no entanto, o unlink suporta a remoção de um arquivo por vez.
+
+Para remover um link simbólico, use o seguinte comando de desvinculação.
+unlink
+
+Se o link simbólico for um link de diretório, não acrescente “/” no final. Esta ferramenta não pode remover diretórios.
+
+Links quebrados
+
+Um link simbólico é um ponteiro para o arquivo original. Ele lembra a localização do arquivo original no momento da criação. Se o arquivo original for movido para um local diferente, o link simbólico será quebrado.
+
+Se você trabalha com links simbólicos regularmente, muitas vezes pode se deparar com vários links simbólicos corrompidos. Links simbólicos quebrados podem ser confusos e resultar em situações indesejadas.
+
+Encontrando links quebrados
+
+Para localizar um link quebrado em um determinado diretório, execute o seguinte comando.
+find -xtype l
+
+Na saída, o comando find listará todos os links simbólicos quebrados encontrados.
+
+Por padrão, find percorrerá todos os subdiretórios para procurar links simbólicos quebrados. No entanto, podemos excluir links simbólicos contidos em subdiretórios.
+find -maxdepth 1 -xtype 1
+
+Excluindo links quebrados
+Usando o comando find, podemos deletar os links quebrados ao mesmo tempo.
+find -xtype l -delete
+
+Conclusão
+
+Os links simbólicos são basicamente arquivos de ponteiro, portanto, você pode removê-los como um arquivo normal. Alternativamente, você também pode usar as ferramentas dedicadas para remover links simbólicos do sistema.
+
+
+Java/Jar
+
+                arquivo compile_flags.txt
+
+se adicionarmos na raiz do projeto o clandg vai ler essas tags e usar em todas suas compilacoes e filtros. O clang tbm detecta um arquivo chamado .clangd na raiz do projeto e usa essas configuracoes para compilar o codigo. Com esse arquivo e possível colocar varios tipos de configuração. Para habilitar o suporte ao c++20 e necessario adicionar a flag -std=c++20.exemplos abaixo.
+
+ex.:                  ex.: 
+
+compile_flags.txt     compile.clangd
+1 -xc++               1 CompileFlags:
+2 -std=c++20          2 add: [-std=c++20]
+
+
+
+o jar é o empacotador de classes do java, ele criar bibliotecas
+
+comandos basicos:
+
+ver arquivos dentro da comprensaao jar
+
+Ex.: jar tf arq.jar
+
+extrai arquivos do jar
+
+Ex.: jar xf arq.jar -o pastaDestino
+
+
+criar arquivo comprimi/empacota arquivos com ARQ.MF automaricamente incluso na compressao
+
+Ex.: jar -cfv arq.jar  qqr.arq + ilimitado o total
+
+criar arquivo comprimi/empacota adicionando arquivo manifesto externamente para dentro da compressao jar.
+
+Ex.: jar -cfvm arq.jar MANIFEST.MF qqr.arq + ilimitado o total
+
+Gerar  compilar  arquivo head ou cabeçalho NATIVO.isso torna possivel execultar c nativo em java linkando as bibliotecas etc
+
+Ex.: javac arq.java -h nomePastaDestino
+
+Executa biblioteca manualmente simultaneamente com o codigo a ser compilado, seta o caminho aonde se encontra a bibliteca library.so etc...
+
+Ex.: java -Djava.library.path=localizacao/desti/ codigo 
+
+Linka os arquivos de siatema Include, linux entre outros e cria o objeto library implementado em c. Linka as pastas d sistema ao codigo c implementado e cria uma biblioteca dinamica library.so 
+
+Ex.: gcc -o libnomeArq.so  -shared   -I/localizacao/include/ -I/localizacao/linux/ codigo.c
+
+
+
+mpv                              
+
+comando Random com loop de playlist
+
+mpv -shuffle -loop-playlist
+
+para repetir musica shift L 
+
+
+wwww.loucura_babameuop
+http://lerolerolero
+https://hnununuoopes
+$PS1=tretantantantando
+$PS0=paranueparanue
+$PS2=paopao+ao+ak
+#=mdlkskskspopopoppp
+#=mdlmssldpppewe909
+#!=le+skksks08392939
+#!=jsksjksskks092930e99
+$1=tatatafafafadardra
+$=2paopoapoapkapakaoao
+
+-----valeuman
+++++++hehehehehe
+.....--chupapapapa
+
+CONFIGURAÇÃO INSTALAÇÃO ESLINT
+
+Pré-requisitos: Node.js ( ^12.22.0, ^14.17.0, ou >=16.0.0) criado com suporte a SSL. (Se você estiver usando uma distribuição oficial do Node.js, o SSL é sempre integrado.)
+
+Você pode instalar o ESLint usando npm:
+
+$ npm install eslint --save-dev
+Você deve então configurar um arquivo de configuração:
+
+$ ./node_modules/.bin/eslint --init
+Depois disso, você pode executar o ESLint em qualquer arquivo ou diretório como este:
+
+$ ./node_modules/.bin/eslint yourfile.js
+Configuração
+Depois de executar eslint --init, você terá um .eslintrcarquivo em seu diretório. Nele, você verá algumas regras configuradas assim:
+
+{
+    "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"]
+    }
+}
+Os nomes "semi"e "quotes"são os nomes das regras no ESLint. O primeiro valor é o nível de erro da regra e pode ser um destes valores:
+
+"off"ou 0- desligue a regra
+"warn"ou 1- ative a regra como um aviso (não afeta o código de saída)
+"error"ou 2- ative a regra como um erro (o código de saída será 1)
+Os três níveis de erro permitem um controle refinado sobre como o ESLint aplica as regras (para obter mais opções e detalhes de configuração, consulte os documentos de configuração ).
+
+
+ - Basico sobre Git
+
+ git show   mostras ultimas modificações recente
+ git log   mostra modifições com número id da ação
+ git log --oneline mostra resumo com id em uma só linha
+ gjt log --graph mostra caminho em forma de ramificação gràfica de merge, pull, fetch e mais 
+ git reflog mostra modificacoes com prefixo do id
+ git diff mostra o que foi feito dentro do arquivo recente nao commitado
+ git diff --name-only mostra nome de arquivos que foram alterados
+ git diff <name archive> mostra arquivo alterado especificado
+ git reset --hard <id commit> reseta e volta para o id commit antigo não atual para correção
+ git reset --hard <id commit> reseta e volta para o id commit antigo não atual para correção
+ git branch mostra o ramo atual do trabalho
+ git branch -a mostra os ramos que existe no servidor remoto
+ git branch <new name> cria novo ramo de trabalho nomeado
+ git init cria repositorio master projeto dentro da pasta 
+ git push origin :<branch name> deleta ramo remoto 
+ git checkout <branch name> muda ramo 
+ git status mostra todas as modificações e supervisiona o que deve ser feito 
+
+
+
+esss comando pssquisa automarica
+incsearh
+
+
+ comando do bash
+ stty -ixon
+
+
+ {
+  "jedi.enable": true,
+  "jedi.startupMessage": false,
+  "jedi.markupKindPreferred": "plaintext",
+  "jedi.trace.server": "off",
+  "jedi.jediSettings.autoImportModules": [],
+  "jedi.jediSettings.caseInsensitiveCompletion": true,
+  "jedi.jediSettings.debug": false,
+  "jedi.executable.command": "jedi-language-server",
+  "jedi.executable.args": [],
+  "jedi.codeAction.nameExtractFunction": "jls_extract_def",
+  "jedi.codeAction.nameExtractVariable": "jls_extract_var",
+  "jedi.completion.disableSnippets": false,
+  "jedi.completion.resolveEagerly": false,
+  "jedi.completion.ignorePatterns": [],
+  "jedi.diagnostics.enable": true,
+  "jedi.diagnostics.didOpen": true,
+  "jedi.diagnostics.didChange": true,
+  "jedi.diagnostics.didSave": true,
+  "jedi.hover.enable": true,
+  "jedi.hover.disable.keyword.all": false,
+  "jedi.hover.disable.keyword.names": [],
+  "jedi.hover.disable.keyword.fullNames": [],
+  "jedi.workspace.extraPaths": [],
+  "jedi.workspace.symbols.maxSymbols": 20,
+  "jedi.workspace.symbols.ignoreFolders": [
+    ".nox",
+    ".tox",
+    ".venv",
+    "__pycache__",
+    "venv"
+  ]
+}
+
+
+ - compactadando com 7z 
+
+  principais comandos: legenda;
+
+  a= add arquivo para compactação 
+  -t= tipo de extensão será usado
+  -d destino/caminho/pasta do arquivo compactado
+  -r compacta, extrai recursivamente
+  e extrai, descompacta arquivos únicos.
+  x extrai, descompacta arquivos volume (divididos)
+  -v defini tamanho do volume a ser divido/compactado   usando unidades em conjunto ex.: -v'B,K,M,G' sempre   em maiúsculo
+
+
+  - extração , descompactação
+  7z e arqAlvo.zip 
+  7z x arqAlvo.zip 
+
+  - compactar para pasta criada com|sem volumes
+  7z a -tzip qqrEndereço/PASTACRIADA/nmArqCEXT arqAlvo 
+  Ex.: 7z a -ttar home/PASTAJOOGO/psp-Zelda.tar psp-Ze  lda.7z
+  Ex.2: 7z a -t7z -v25M sdcard/PASTAJOGO/ps1-crashBand  icoot.7z  ps1-crashBandicoot.7z
+
+  - extrair arquivo|divido para pasta criada 
+  7z x -oqqrEndereço/PASTACRIADA/nmArqCEXT arqAlvo
+  Ex.: 7z x -o../home/PASTAJOGO/psp-finalFantasy.7z
+  EX.2: 7z x -o/sdcard/PASTAJOGO/psp-finalFantasy.001.  7z
+
+  Atenção para extrair arquivos divididos o arquivo al  vo sempre vai ser com extensão '001.extensão'
+
+link compiçar manual vim com pythoon               
+
+./configure --prefix=/usr/.local\--enable-python3interp\--with-python3-config-dir=/usr/lib32/python3.9/config-*
+
+
+
+10/09/22  02/1990/78 tr/34/gata ppt/78/00
+
+1990/05/89 73/89/90.dd 99/tp/ddtt 99/p/data
+
+123/hu/op 233/0990/90 /0999/kjjj/9 po/90/0
+
+43/90/popopp 90/43/9099897 50/03/nhato
+
+03/05/1990 março 31 anos 
+
+
+
+ TECLAS VIM MAPEADAS NV INTERMEDIARIO
+
+
+tecla ....... tecla mapeada
+
+<c-x> ....... Ctrl-x
+<left> ...... seta para a esquerda
+<right> ..... seta para a direita
+<c-m-a> ..... Ctrl-Alt-a
+<cr> ........ Enter
+<Esc> ....... Escape
+<leader> .... normalmente \
+<bar> ....... | pipe
+<cword> ..... palavra sob o cursor
+<cfile> ..... arquivo sob o cursor
+<cfile> ..... arquivo sob o cursor sem extensão
+<sfile> ..... conteúdo do arquivo sob o cursor
+<left> ...... salta um caractere para esquerda
+<up> ........ equivale clicar em `seta acima'
+<m-f4> ...... a tecla alt (m) mais a tecla f4
+<c-f> ....... Ctrl-f
+<bs> ........ backspace
+<space> ..... espaço
+<tab> ....... tab
+<s-f> .........Shift-f
+
+
+COMANDOS MONOCRATICOS NV SIMPLES
+
+habilita recurso grep barra invertida '\'
+:set magic
+
+ :c ......-------cmap 
+ :ec .....------- echo
+map ......... mapear
+,d .......... atalho que quermos
+<Esc> ....... se estive em modo de inserção sai
+: ........... em modo de comando
+% ........... em todo o arquivo
+s ........... substitua
+\n .......... quebra de linha
+{2,} ........ duas ou mais vezes
+\r .......... trocado por \r Enter
+g ........... globalmente
+<cr> ........ confirmação do comando
+\s ..... espaço
+\+ ..... uma ou mais vezes
+$ ...... no final da linha
+\| ..... ou
+`` '' .. espaço (veja imagem acima)
+\+ ..... uma ou mais vezes
+\ze .... até o fim
+\t ..... tabulação
+`z ... retorna à marca criada
+mz ... marca a posição atual do cursor para retornar no final do comando
+
+
+
+Codigo Asci Simbolo
+
+  { = <Crtrl-v> 123     @ = <Crtrl-v> 064
+  } = <Crtrl-v> 125     ¡ = <Crtrl-v> 173
+  [ = <Crtrl-v> 091Deletar = <Crtrl-v> 127
+  ] = <Crtrl-v> 093     > = <Crtrl-v> 062
+  ^ = <Crtrl-v> 094     < = <Crtrl-v> 060
+  ~ = <Crtrl-v> 126      ÷ = <Crtrl-v> 247
+
+youtube-dl --write-auto-sub --sub-lang pt 
+
+
+seleçâo extensão plug coc-vim
+
+coc-python/
+coc-snippets/         coc-sh/
+coc-omnisharp/        coc-highlight/
+coc-eslint/           coc-emmet/
+coc-markdownlint/     coc-markdown-preview-enhanced/
+coc-cmake/            coc-java/                     coc-jsref/            coc-java-debug/
+coc-java-dependency/  coc-java-intellicode/         coc-jedi/             coc-json/
+coc-html/             coc-pairs/                    coc-clangd/           coc-clang-format-style-options/
+coc-marketplace/      coc-tsserver/
+coc-java/  
+
+
+       Montador Avra
+AVRA: montador de macro AVR avançado (versão 1.4.2) 
+
+uso: avra [-f][O|M|I|G] tipo de arquivo de saída
+[-o <filename>] nome do arquivo de saída 
+[-d <filename>] nome do arquivo de depuração 
+[-e <filename>] nome do arquivo para saída do conteúdo da EEPROM 
+[-l <filename>] gerar arquivo de lista 
+[-m <mapfile>] gerar arquivo de mapa 
+[--define <símbolo>[=<valor>]] 
+[-I <dir>] 
+[--listmac] 
+[--max_errors <número>] 
+[--devices] 
+[--version] [
+-O e|w|i] 
+[-h] 
+[--help] ajuda geral 
+<arquivo para montar> 
+--listfile -l : Cria arquivo de lista 
+--mapfile -m: Cria arquivo de mapa 
+--define -D: define o símbolo. 
+--includedir -I : Caminhos de inclusão adicionais. Padrão: /data/data/com.termux/files/usr/include/avr 
+--listmac : Expansão de macro de lista em listfile. 
+--max_errors: Número máximo de erros antes de sair (padrão: 10) 
+--devices : lista os dispositivos suportados. 
+--version : informações da versão. 
+-O e|w|i : Emitir erro/aviso/ignorar código sobreposto.
+
+    
+        System Call (vai desde 64-bit ate 8-btt)
+
+   Registrador     ultilidade
+  
+      rax       id do System call
+      rdi       primeiro parâmetro
+      rsi       segundo     ||
+      rdx       terceiro    ||
+      r10       quarto      ||
+      r8        quinto      ||
+      r9        sexto       ||
+
+
+        Registradores Assembly NASM
+
+  64-bit     16-bit       16-bit      8-bit
+
+   rax         eax          ax          al
+   rbx         ebx          bx          bl
+   rcx         ecx          cx          cl
+   rdx         edx          dx          dl
+   rsp         esp          si          sl
+   rbp         ebp          bi          bl
+   rdi         edi          dp          dl
+   rsi         esi          sp          sl
+   r8          r8d          r8w         r8b
+   r9          r9d          r9w         r9b
+   r10         r10d         r10w        r10b
+   r11         r11d         r11w        r11b
+   r12         r12d         r12         r12b
+   r13         r13d         r13w        r13b
+   r14         r14d         r14w        r14b
+   r15         r15d         r15w        r15b
+
+      System Call
+
+%rax  system call       %rdi           %rsi          %rdx  
+
+  0    sys_read      unsigned       char* buf    size_t count
+                      int fd
+ 
+  1    sys_write     unsigned       const char   size_t count
+                      int fd        *buf
+
+  2    sys_open      const char     int flags    int mode
+                     *filename
+
+  3    sys_close     unsigned       nada         nada
+                      int fd        estado z     estado z
+
+  4    sys_stat      const char     struct stat  nada
+                     *filename      *statbuf     estado z
+
+  5    sys_fstat     unsigned       struct stat  nada
+                      int fd        *statbuf     estado z
+
+  6    sys_lstat     fconst char    struct stat  nada 
+                     *filename      *statbuf     estado z
+                                               
+  ̃7    sys_poll      struct poll_fd unsigned    long 
+                     *ufds          int nfds    timeout_msecs
+
+
+  ...continuação:
+
+      %r10          %r8         %r9
+
+   nada          nada         nada
+   estado z      estado z     estado z
+
+      ||           ||           ||
+   
+      ||           ||           ||
+                           
+      ||           ||           ||
+
+      ||           ||           ||   
+
+      ||           ||           ||
+
+      ||           ||           ||
+
+      ||           ||           ||
+
+
+
+
+
+
+
+       System Call (vai desde 64-bit ate 8-btt)
+
+   Registrador     ultilidade
+  
+      rax       id do System call
+      rdi       primeiro parâmetro
+      rsi       segundo     ||
+      rdx       terceiro    ||
+      r10       quarto      ||
+      r8        quinto      ||
+      r9        sexto       ||
+
+
+        Registradores Assembly NASM
+
+  64-bit     16-bit       16-bit      8-bit
+
+   rax         eax          ax          al
+   rbx         ebx          bx          bl
+   rcx         ecx          cx          cl
+   rdx         edx          dx          dl
+   rsp         esp          si          sl
+   rbp         ebp          bi          bl
+   rdi         edi          dp          dl
+   rsi         esi          sp          sl
+   r8          r8d          r8w         r8b
+   r9          r9d          r9w         r9b
+   r10         r10d         r10w        r10b
+   r11         r11d         r11w        r11b
+   r12         r12d         r12         r12b
+   r13         r13d         r13w        r13b
+   r14         r14d         r14w        r14b
+   r15         r15d         r15w        r15b
+
+      System Call
+
+%rax  system call       %rdi           %rsi          %rdx  
+
+  0    sys_read      unsigned       char* buf    size_t count
+                      int fd
+ 
+  1    sys_write     unsigned       const char   size_t count
+                      int fd        *buf
+
+  2    sys_open      const char     int flags    int mode
+                     *filename
+
+  3    sys_close     unsigned       nada         nada
+                      int fd        estado z     estado z
+
+  4    sys_stat      const char     struct stat  nada
+                     *filename      *statbuf     estado z
+
+  5    sys_fstat     unsigned       struct stat  nada
+                      int fd        *statbuf     estado z
+
+  6    sys_lstat     fconst char    struct stat  nada 
+                     *filename      *statbuf     estado z
+                                               
+  ̃7    sys_poll      struct poll_fd unsigned    long 
+                     *ufds          int nfds    timeout_msecs
+
+
+  ...continuação:
+
+      %r10          %r8         %r9
+
+   nada          nada         nada
+   estado z      estado z     estado z
+
+      ||           ||           ||
+   
+      ||           ||           ||
+                           
+      ||           ||           ||
+
+      ||           ||           ||   
+
+      ||           ||           ||
+
+      ||           ||           ||
+
+      ||           ||           ||
+
+
+
+
+
+
+
+ 
